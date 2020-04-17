@@ -41,6 +41,8 @@ public class ContatoActionServlet extends HttpServlet {
             contato.setTelefone(req.getParameter("telefone"));
             contato.setCelular(req.getParameter("celular"));
             contato.setEmail(req.getParameter("email"));
+            contato.setTelefone2(req.getParameter("telefone2"));
+            contato.setCelular2(req.getParameter("celular2"));
             contato.insere();
 
             resp.sendRedirect("/listaContato");
@@ -60,6 +62,8 @@ public class ContatoActionServlet extends HttpServlet {
             contato.setTelefone(req.getParameter("telefone"));
             contato.setCelular(req.getParameter("celular"));
             contato.setEmail(req.getParameter("email"));
+            contato.setTelefone2(req.getParameter("telefone2"));
+            contato.setCelular2(req.getParameter("celular2"));
             contato.altera();
             resp.sendRedirect("/listaContato");
 
