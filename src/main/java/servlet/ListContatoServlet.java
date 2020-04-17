@@ -42,8 +42,6 @@ public class ListContatoServlet extends HttpServlet {
             out.println("                   <th>Telefone</th>");
             out.println("                   <th>Celular</th>");
             out.println("                   <th>E-mail</th>");
-            out.println("                   <th>Telefone2</th>");
-            out.println("                   <th>Celular2</th>");
             out.println("                   <th>Opções</th>");
             out.println("               </tr>");
             out.println("           </thead>");
@@ -61,8 +59,6 @@ public class ListContatoServlet extends HttpServlet {
                     out.println("                   <td>" + c.getTelefone() + "</td>");
                     out.println("                   <td>" + c.getCelular() + "</td>");
                     out.println("                   <td>" + c.getEmail() + "</td>");
-                    out.println("                   <td>" + c.getTelefone2() + "</td>");
-                    out.println("                   <td>" + c.getCelular2() + "</td>");
                     out.println("                   <td><a href='/formContato?op=editar&id=" + c.getId() +
                                                     "'>Editar</a> <br> <a href='/formContato?op=excluir&id=" + c.getId() +
                                                     "'>Excluir</a></td>");

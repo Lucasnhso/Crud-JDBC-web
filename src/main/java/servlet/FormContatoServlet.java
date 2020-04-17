@@ -27,8 +27,6 @@ public class FormContatoServlet extends HttpServlet {
         String telefone = "";
         String celular  = "";
         String email    = "";
-        String telefone2 = "";
-        String celular2  = "";
 
         if (req.getParameter("op").equals("novo")) {
             // inserir contato
@@ -45,8 +43,6 @@ public class FormContatoServlet extends HttpServlet {
             telefone = contato.getTelefone();
             celular  = contato.getCelular();
             email    = contato.getEmail();
-            telefone2 = contato.getTelefone();
-            celular2  = contato.getCelular();
         } else if (req.getParameter("op").equals("excluir")) {
             // inserir contato
             opcao  = "Excluir Contato";
@@ -58,8 +54,6 @@ public class FormContatoServlet extends HttpServlet {
             telefone = contato.getTelefone();
             celular  = contato.getCelular();
             email    = contato.getEmail();
-            telefone2 = contato.getTelefone();
-            celular2  = contato.getCelular();
         }
 
 
@@ -82,8 +76,6 @@ public class FormContatoServlet extends HttpServlet {
         out.println(           String.format("   Telefone:   <input type='text' name='telefone' value='%s'> <br>", telefone));
         out.println(           String.format("   Celular:   <input type='text' name='celular' value='%s'> <br>", celular));
         out.println(           String.format("   E-mail:   <input type='text' name='email' value='%s'> <br>", email));
-        out.println(           String.format("   Telefone2:   <input type='text' name='telefone2' value='%s'> <br>", telefone));
-        out.println(           String.format("   Celular2:   <input type='text' name='celular2' value='%s'> <br>", celular));
         out.println(            "   <input type='submit' value='Salvar'>");
         out.println(            "</form>");
         out.println("   </body>");
