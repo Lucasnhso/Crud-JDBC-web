@@ -45,8 +45,8 @@ public class FormContatoServlet extends HttpServlet {
             telefone = contato.getTelefone();
             celular  = contato.getCelular();
             email    = contato.getEmail();
-            telefone2 = contato.getTelefone();
-            celular2  = contato.getCelular();
+            telefone2 = contato.getTelefone2();
+            celular2  = contato.getCelular2();
         } else if (req.getParameter("op").equals("excluir")) {
             // inserir contato
             opcao  = "Excluir Contato";
@@ -58,8 +58,8 @@ public class FormContatoServlet extends HttpServlet {
             telefone = contato.getTelefone();
             celular  = contato.getCelular();
             email    = contato.getEmail();
-            telefone2 = contato.getTelefone();
-            celular2  = contato.getCelular();
+            telefone2 = contato.getTelefone2();
+            celular2  = contato.getCelular2();
         }
 
 
